@@ -1,0 +1,25 @@
+----------------------------------------------------------------------
+-------------------------sim800l - camera-----------------------------
+----------------------------------------------------------------------
+Serialcommunicate.h
+-------------------
+this file have function to communicate between sim800l and termios
+----------------------------------------------------------------------
+socketcommunicate.h
+-------------------
+this file have function to communicate between camera and socket
+----------------------------------------------------------------------
+som800l.h
+---------
+this file have function to communicate between sim800l and app
+----------------------------------------------------------------------
+applycation.c
+-------------
+this file have main() and that program divided into 2 processing threads 
+use fork().
+father: allway listen to client, recv() the data from this client
+and then write to child
+child: read data from father and processed. 
+----------------------------------------------------------------------
+new : file build by gcc -o.
+
